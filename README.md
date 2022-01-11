@@ -8,4 +8,4 @@ Therefore they are not liable for anything that happens in this repository nor g
 
 ## Check out the notes
 
-[JavaScript 2022 Bootcamp](docs/javascript-notes.md)
+[JavaScript 2022 Bootcamp](docs/javascript-notes.md#freecodecamp-javascript-course-notes)
