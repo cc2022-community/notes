@@ -18,6 +18,8 @@ We currently don't have a document for the *Responsive Web Design Certification*
 
 * [Code of Conduct](CODE_OF_CONDUCT.md)
 * [Contributing](CONTRIBUTING.md)
+* [Discord of this GitHub group (unaffiliated)](https://discord.gg/8TDpyca2)
+* [Official Cohorts Discord](https://discord.gg/Fg9NfUpA)
 * [freeCodeCamp](https://www.freecodecamp.org/)
   * [WebDev course](https://www.freecodecamp.org/learn/responsive-web-design/)
   * [JavaScript course](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/)
