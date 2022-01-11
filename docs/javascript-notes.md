@@ -23,15 +23,15 @@ It is recommended to use `let` for variables, since you won't be able to acciden
 
 ```js
 let myVariable;             // Declare a variable
-// Use what's called a "camelCase" to name your variables
+        // Use what's called a "camelCase" to name your variables
 myVariable = "Hello World"; // Assign a value to a variable
 myVariable = 12;            // You can assign numbers without quotation marks
 ```
 
 ```js
 var myName = "Andrew";      // Declare a variable
-var myName = "Barbara";     // You can declare a *var* multiple times
-// Note that you can't do the same with a *let*
+var myName = "Barbara";     // You can declare a "var" multiple times
+// Note that you can't do the same with a "let"
 ```
 
 ```js
@@ -44,7 +44,7 @@ you can easily tell them apart from variables */
 ```js
 myName = myVariable;        // You can assign the value of one variable to another
 
-let decimalValue = 3.59;     // You can assign a decimal value to your variable as well
+let decimalValue = 3.59;    // You can assign a decimal value to your variable as well
 ```
 
 ## Console logging
@@ -79,18 +79,12 @@ let myVar = subVar * 5;  // Multiply the value of subVar by 5 - we get 35
 let a = 1;
 
 // Postfix
-
 console.log(a++);   // a is used first to print to console, then is incremented by 1
-// Above statement prints 1
-```
+        // Above statement prints 1
 
-```js
-console.log(a);     // Prints 2 (we incremented it above)
-```
+console.log(a);     // This statement prints 2 (we incremented it above)
 
-```js
 // Prefix
-
 console.log(++a);   // a is incremented first and then new value of a is printed
-// Above statement prints 3
+        // Above statement prints 3
 ```
