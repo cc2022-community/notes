@@ -60,3 +60,15 @@ subVar--            // Same as above, but we are decrementing - subtracting 1
 
 let myVar = subVar * 5  // Multiply the value of subVar by 5 - we get 35
 ```
+### Prefix and Postfix increment/decrement
+```js
+let a = 1;
+// postfix
+console.log(a++); // a is used first used to print to console and then a is incremented by 1
+// Above statement prints 1
+console.log(a); // prints 2
+// prefix
+console.log(++a); // a is incremented first and then new value of a is used to print
+// Above statement prints 3
+// same applies for -- but decremented by 1
+```
