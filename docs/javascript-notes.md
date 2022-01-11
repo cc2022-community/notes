@@ -5,7 +5,7 @@
 ```js
 // This is a single-line comment
 
-let variableName // This is also a single-line comment, next to some code
+let variableName; // This is also a single-line comment, next to some code
 
 /* And this is a multi-line comment.
 let variableName
@@ -44,31 +44,53 @@ you can easily tell them apart from variables */
 ```js
 myName = myVariable;        // You can assign the value of one variable to another
 
-let decimalValue = 3.59     // You can assign a decimal value to your variable as well
+let decimalValue = 3.59;     // You can assign a decimal value to your variable as well
+```
+
+## Console logging
+
+You can print out anything you want to the JavaScript console - a string, a number, a variable, a constant, a mathematical equation, etc.
+
+Very useful for checking the value of a variable
+
+```js
+console.log("Hello World");  // Prints "Hello World" to the console
+console.log(myVariable);     // Prints the (declared above) number 12 to the console
+console.log(5 + 6);          // Prints the number 11
 ```
 
 ## Mathematical operations
 
 ```js
-let addVar = 5 + 10     // Value is 15
-let subVar = 16 - 9     // Value is 7
-let mulVar = 2 * 12     // Value is 24
-let divVar = 21 / 7     // Value is 3
+let addVar = 5 + 10;     // Value is 15
+let subVar = 16 - 9;     // Value is 7
+let mulVar = 2 * 12;     // Value is 24
+let divVar = 21 / 7;     // Value is 3
 
-addVar++            // Increment the "addVar" variable - same as adding 1 to it
-subVar--            // Same as above, but we are decrementing - subtracting 1
+addVar++;            // Increment the "addVar" variable - same as adding 1 to it
+subVar--;            // Same as above, but we are decrementing - subtracting 1
 
-let myVar = subVar * 5  // Multiply the value of subVar by 5 - we get 35
+let myVar = subVar * 5;  // Multiply the value of subVar by 5 - we get 35
 ```
-### Prefix and Postfix increment/decrement
+
+### Prefix and postfix increment/decrement
+
 ```js
 let a = 1;
-// postfix
-console.log(a++); // a is used first used to print to console and then a is incremented by 1
+
+// Postfix
+
+console.log(a++);   // a is used first to print to console, then is incremented by 1
 // Above statement prints 1
-console.log(a); // prints 2
-// prefix
-console.log(++a); // a is incremented first and then new value of a is used to print
+```
+
+```js
+console.log(a);     // Prints 2 (we incremented it above)
+```
+
+```js
+// Prefix
+
+console.log(++a);   // a is incremented first and then new value of a is printed
 // Above statement prints 3
-// same applies for -- but decremented by 1
 ```
