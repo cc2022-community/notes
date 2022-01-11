@@ -21,11 +21,11 @@ There are a few guidelines to be followed:
 * No misleading content, even as a joke
 * Repository managers reserve a right to edit any pull requests to conform them to the contributing guidelines and document structure
 
-## Donating
+## Donations
 
 We are thankful to the [Class Central](https://www.classcentral.com/) and [freeCodeCamp](https://www.freecodecamp.org/) communities for organizing these courses without any profit incentive and letting all of us take part and learn for free. Therefore, this project will not ask for any financial support.
 
-Instead, consider donating to freeCodeCamp instead. freeCodeCamp provides quality tutorials and courses for free. By supporting them, you're supporting not only a group of volunteers that dedicate their time to share their expertise without a price tag attached, but also a large and diverse community of learners (and, by extension, us).
+Consider donating to freeCodeCamp instead. freeCodeCamp provides quality tutorials and courses for free. By supporting them, you're supporting not only a group of volunteers that dedicate their time to share their expertise without a price tag attached, but also a large and diverse community of learners (and, by extension, us).
 
 * [freeCodeCamp website](https://www.freecodecamp.org/donate)
 * [GitHub Sponsors](https://github.com/sponsors/freeCodeCamp)
