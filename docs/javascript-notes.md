@@ -1,6 +1,6 @@
 # freeCodeCamp JavaScript course notes
 
-***NOTE:*** While it is not strictly necessary, it is a good practice to type the semicolon `;` at the end of each line.
+While it is not strictly necessary, it is a good practice to type the semicolon `;` at the end of each line.
 
 ## Comments
 
@@ -113,7 +113,7 @@ myVar /= 4;     /* Value is 2
 myVar = myVar / 2 */
 ```
 
-## Strings and escape sequences
+## Strings
 
 ### Quotation marks
 
@@ -153,4 +153,37 @@ FirstLine
         \SecondLine
 ThirdLine
 */
+```
+
+### Concatenation
+
+```js
+let myStr = "I come first. " + "I come second.";
+        // Notice the space at the end of the first string
+
+console.log(myStr);     // I come first. I come second.
+```
+
+```js
+let myStr = "I come first. ";
+myStr += "I come second.";
+
+console.log(myStr);     // I come first. I come second.
+```
+
+### Constructing strings with variables
+
+```js
+const ourName = "freeCodeCamp";
+const ourStr = "Hello, our name is " + ourName + ", how are you?";
+
+console.log(ourStr);    // Hello, our name is freeCodeCamp, how are you?
+```
+
+```js
+const anAdjective = "awesome!";
+let ourStr = "freeCodeCamp is ";
+ourStr += anAdjective;
+
+console.log(ourStr);    // freeCodeCamp is awesome!
 ```
