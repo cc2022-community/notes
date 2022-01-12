@@ -72,7 +72,10 @@ let divVar = 21 / 7;     // Value is 3
 addVar++;            // Increment the "addVar" variable - same as adding 1 to it
 subVar--;            // Same as above, but we are decrementing - subtracting 1
 
-let myVar = subVar * 5;  // Multiply the value of subVar by 5 - we get 35
+let myVar = subVar * 5; // Multiply the value of subVar by 5 - we get 35
+
+let remainder = 11 % 3; // Gives the remainder of the division of two numbers
+        // Value is 2 (3 * 3 = 9; 11 - 9 = 2)
 ```
 
 ### Prefix and postfix increment/decrement
@@ -89,4 +92,23 @@ console.log(a);     // This statement prints 2 (because we incremented it above)
 // Prefix
 console.log(++a);   // 'a' is incremented first, then the new value of 'a' is printed
         // Above statement prints 3
+```
+
+### Compound assignment
+
+```js
+let myVar = 1;
+
+myVar += 5;     /* Value is 6
+This is the same as:
+myVar = myVar + 5 */
+
+myVar -= 2      /* Value is 4
+myVar = myVar - 2 */
+
+myVar *= 2      /* Value is 8
+myVar = myVar * 2 */
+
+myVar /= 4      /* Value is 2
+myVar = myVar / 2 */
 ```
