@@ -1,6 +1,6 @@
 # freeCodeCamp JavaScript course notes
 
-## Read Me First
+## Read me first
 
 [JavaScript course on freeCodeCamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/) | [JavaScript Bootcamp playlist](https://www.youtube.com/playlist?list=PLU3RKvMpgrSEswU7f9pg6EYaO1s944CDI)
 
@@ -214,9 +214,20 @@ console.log(firstLetterOfLastName);             // Value is "L"
 - 7th character is at `[6]`
 - 30th character is at `[29]`
 
----
+```js
+// Use bracket notation to find the Nth character in a string
+let thirdLetterOfLastName = lastName[2];        // Index 2 is our third letter
+console.log(thirdLetterOfLastName);             // Value is "v"
 
-In JavaScript, String values are immutable, which means that they cannot be altered once created.
+// Use bracket notation to find the last character in a string
+let lastLetterOfLastName = lastName[lastName.length - 1];     
+        // Remember to subtract 1 since we are counting from 0!
+console.log(lastLetterOfLastName);              // Value is "e"
+```
+
+#### String mutability
+
+In JavaScript, `String` values are immutable, which means that they cannot be altered once created.
 
 ```js
 // This code will throw an error
@@ -232,4 +243,14 @@ This does *not* mean that `myStr` cannot be changed, just that the individual ch
 let myStr = "Bob";
 myStr = "Job";
 // Value is "Job"
+```
+
+## Arrays
+
+```js
+// An array can hold multiple values
+const sandwich = ["peanut butter", "jelly", "bread", 2];
+
+// You can nest arrays inside other arrays
+const teams = [["Bulls", 23], ["White Sox", 45]];
 ```
