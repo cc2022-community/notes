@@ -2,11 +2,13 @@
 
 ## Read me first
 
-[JavaScript course on freeCodeCamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/) | [JavaScript Bootcamp playlist](https://www.youtube.com/playlist?list=PLU3RKvMpgrSEswU7f9pg6EYaO1s944CDI)
+[JavaScript course on freeCodeCamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/) | [JavaScript Bootcamp playlist](https://www.youtube.com/playlist?list=PLU3RKvMpgrSEswU7f9pg6EYaO1s944CDI) | [JavaScript on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 While it is not strictly necessary, it is a good practice to type the semicolon `;` at the end of each line.
 
 ## Comments
+
+[Comments on MDN](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics#comments)
 
 ```js
 // This is a single-line comment
@@ -20,6 +22,8 @@ so that it doesn't execute! */
 ```
 
 ## Variables, constants
+
+[Variables on MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables#content)
 
 - `var` - **variable**; you can declare (create) it multiple times
 - `let` - **variable**; you can declare it only once, but you can change its value later
@@ -55,6 +59,8 @@ let decimalValue = 3.59;    // You can assign a decimal value to your variable a
 
 ## Console logging
 
+[console.log on MDN](https://developer.mozilla.org/en-US/docs/Web/API/console/log#content)
+
 You can print out anything you want to the JavaScript console - a string, a number, a variable, a constant, a mathematical equation, etc.
 
 Very useful for checking the value of a variable
@@ -66,6 +72,8 @@ console.log(5 + 6);          // Prints the number 11
 ```
 
 ## Mathematical operations
+
+[Arithmetic operators on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#arithmetic_operators)
 
 ```js
 let addVar = 5 + 10;     // Value is 15
@@ -84,6 +92,8 @@ let remainder = 11 % 3; // Gives the remainder of the division of two numbers
 
 ### Prefix and postfix increment/decrement
 
+[Increment and decrement on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#increment_and_decrement)
+
 ```js
 let a = 1;
 
@@ -100,26 +110,33 @@ console.log(++a);   // 'a' is incremented first, then the new value of 'a' is pr
 
 ### Compound assignment
 
+[Assignment operators on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#assignment_operators)
+
 ```js
 let myVar = 1;
 
 myVar += 5;     /* Value is 6
 This is the same as:
-myVar = myVar + 5 */
+myVar = myVar + 5
+*/
 
-myVar -= 2;     /* Value is 4
-myVar = myVar - 2 */
+myVar -= 2;     // Value is 4
+// myVar = myVar - 2
 
-myVar *= 2;     /* Value is 8
-myVar = myVar * 2 */
+myVar *= 2;     // Value is 8
+// myVar = myVar * 2
 
-myVar /= 4;     /* Value is 2
-myVar = myVar / 2 */
+myVar /= 4;     // Value is 2
+// myVar = myVar / 2
 ```
 
 ## Strings
 
+[Strings on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#contents)
+
 ### Quotation marks
+
+[Text formatting on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Text_formatting#content)
 
 ```js
 // You can escape literal quotes inside your string using a backslash
@@ -135,6 +152,8 @@ console.log(myVar);     // Adam said, "Hi, Barbara!"
 ```
 
 ### Escape sequences
+
+[Escape sequences on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#escape_sequences)
 
 | Code |      Output      |
 |------|------------------|
@@ -160,6 +179,8 @@ ThirdLine
 ```
 
 ### Concatenation
+
+[Addition on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition#content)
 
 ```js
 let myStr = "I come first. " + "I come second.";
@@ -193,6 +214,8 @@ console.log(ourStr);    // freeCodeCamp is awesome!
 ```
 
 ### Operations on strings
+
+[String objects on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Text_formatting#string_objects)
 
 ```js
 const lastName = "Lovelace";
@@ -246,6 +269,8 @@ myStr = "Job";
 ```
 
 ## Arrays
+
+[Arrays on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 ```js
 // An array can hold multiple values
