@@ -254,27 +254,28 @@ const sandwich = ["peanut butter", "jelly", "bread", 2];
 // You can nest arrays inside other arrays
 const teams = [["Bulls", 23], ["White Sox", 45]];
 ```
-### Some methods to change arrays
+
+TODO: Multi-dimensional arrays
+
+### Modify array data
 
 ```js
+let myArray = [2, 3, 4];
+console.log(myArray);   // Will print the array in console [ 2, 3, 4 ]
 
-let myArray =[2,3,4];
-console.log(myArray); // will display the array in console [ 2, 3, 4 ]
+// Add element to the end of the array
+myArray.push(5);
+console.log(myArray);   // Will print the new array in console  [ 2, 3, 4, 5 ]
 
-// remove last element of array with .pop()
+// Remove last element of the array
 myArray.pop();
-console.log(myArray); // will display the new array in console  [ 2, 3 ]
+console.log(myArray);   // Will print the new array in console  [ 2, 3, 4 ]
 
-// add element to the end of the array with .push()
-myArray.push(4);
-console.log(myArray);  // will display the new array in console  [ 2, 3, 4 ]
-
-// remove  element at the beginning of the array with .shift()
+// Remove element at the beginning of the array
 myArray.shift();
-console.log(myArray);   // will display the new array in console  [ 3, 4 ]
+console.log(myArray);   // Will print the new array in console  [ 3, 4 ]
 
-// add element at thae beginning of the array with .unshift()
+// Add element at the beginning of the array
 myArray.unshift(2);
-console.log(myArray); // will display the new array in console with the 2 readded  [ 2, 3, 4 ]
-
+console.log(myArray);   // Will print the new array in console  [ 2, 3, 4 ]
 ```
