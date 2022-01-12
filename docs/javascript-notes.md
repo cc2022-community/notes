@@ -254,3 +254,27 @@ const sandwich = ["peanut butter", "jelly", "bread", 2];
 // You can nest arrays inside other arrays
 const teams = [["Bulls", 23], ["White Sox", 45]];
 ```
+### Some methods to change arrays
+
+```js
+
+let myArray =[2,3,4];
+console.log(myArray); // will display the array in console [ 2, 3, 4 ]
+
+// remove last element of array with .pop()
+myArray.pop();
+console.log(myArray); // will display the new array in console  [ 2, 3 ]
+
+// add element to the end of the array with .push()
+myArray.push(4);
+console.log(myArray);  // will display the new array in console  [ 2, 3, 4 ]
+
+// remove  element at the beginning of the array with .shift()
+myArray.shift();
+console.log(myArray);   // will display the new array in console  [ 3, 4 ]
+
+// add element at thae beginning of the array with .unshift()
+myArray.unshift(2);
+console.log(myArray); // will display the new array in console with the 2 readded  [ 2, 3, 4 ]
+
+```
