@@ -1,5 +1,9 @@
 # freeCodeCamp JavaScript course notes
 
+## Read Me First
+
+[JavaScript course on freeCodeCamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/) | [JavaScript Bootcamp playlist](https://www.youtube.com/playlist?list=PLU3RKvMpgrSEswU7f9pg6EYaO1s944CDI)
+
 While it is not strictly necessary, it is a good practice to type the semicolon `;` at the end of each line.
 
 ## Comments
@@ -186,4 +190,46 @@ let ourStr = "freeCodeCamp is ";
 ourStr += anAdjective;
 
 console.log(ourStr);    // freeCodeCamp is awesome!
+```
+
+### Operations on strings
+
+```js
+const lastName = "Lovelace";
+
+// Find the length of a string
+let lastNameLength = lastName.length;
+console.log(lastNameLength);    // Value is 8 - word "Lovelace" is 8 characters long
+
+// Use bracket notation to find the first character in a string
+let firstLetterOfLastName = lastName[0];        // Index 0 is our first letter
+console.log(firstLetterOfLastName);             // Value is "L"
+```
+
+***IMPORTANT!*** In bracket notation we start counting from zero (*Zero-based indexing*; this is common for most modern programming languages). That means, for example:
+
+- 1st character is at `[0]`
+- 2nd character is at `[1]`
+- 3rd character is at `[2]`
+- 7th character is at `[6]`
+- 30th character is at `[29]`
+
+---
+
+In JavaScript, String values are immutable, which means that they cannot be altered once created.
+
+```js
+// This code will throw an error
+let myStr = "Bob";
+myStr[0] = "J";
+// TypeError: 0 is read-only
+```
+
+This does *not* mean that `myStr` cannot be changed, just that the individual characters of a *string literal* cannot be changed. The only way to change `myStr` would be to assign it with a new string.
+
+```js
+// This code is correct
+let myStr = "Bob";
+myStr = "Job";
+// Value is "Job"
 ```
