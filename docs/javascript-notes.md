@@ -103,12 +103,54 @@ myVar += 5;     /* Value is 6
 This is the same as:
 myVar = myVar + 5 */
 
-myVar -= 2      /* Value is 4
+myVar -= 2;     /* Value is 4
 myVar = myVar - 2 */
 
-myVar *= 2      /* Value is 8
+myVar *= 2;     /* Value is 8
 myVar = myVar * 2 */
 
-myVar /= 4      /* Value is 2
+myVar /= 4;     /* Value is 2
 myVar = myVar / 2 */
+```
+
+## Strings and escape sequences
+
+### Quotation marks
+
+```js
+// You can escape literal quotes inside your string using a backslash
+let myVar = "This is a \"JavaScript\" course.";
+console.log(myVar);     // This is a "JavaScript" course.
+
+// You can also use single quotes
+let doubleQuoteStr = "This is a string"; 
+let singleQuoteStr = 'This is also a string';
+
+myVar = 'Adam said, "Hi, Barbara!"'
+console.log(myVar);     // Adam said, "Hi, Barbara!"
+```
+
+### Escape sequences
+
+| Code |      Output      |
+|------|------------------|
+| \'   | single quote     |
+| \"   | double quote     |
+| \\\\ | backslash        |
+| \n   | new line         |
+| \r   | carriage return  |
+| \t   | tab              |
+| \b   | word boundary    |
+| \f   | form feed        |
+
+```js
+let myStr = "FirstLine\n\t\\SecondLine\nThirdLine";
+
+console.log(myStr);
+
+/* Output:
+FirstLine
+        \SecondLine
+ThirdLine
+*/
 ```
