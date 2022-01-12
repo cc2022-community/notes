@@ -1,5 +1,7 @@
 # freeCodeCamp JavaScript course notes
 
+***NOTE:*** While it is not strictly necessary, it is a good practice to type the semicolon `;` at the end of each line.
+
 ## Comments
 
 ```js
@@ -31,7 +33,7 @@ myVariable = 12;            // You can assign numbers without quotation marks
 ```js
 var myName = "Andrew";      // Declare a variable
 var myName = "Barbara";     // You can declare a "var" multiple times
-// Note that you can't do the same with a "let"
+        // Note that you can't do the same with a "let"
 ```
 
 ```js
@@ -79,12 +81,12 @@ let myVar = subVar * 5;  // Multiply the value of subVar by 5 - we get 35
 let a = 1;
 
 // Postfix
-console.log(a++);   // a is used first to print to console, then is incremented by 1
+console.log(a++);   // First, 'a' is used to print to console, and THEN incremented
         // Above statement prints 1
 
-console.log(a);     // This statement prints 2 (we incremented it above)
+console.log(a);     // This statement prints 2 (because we incremented it above)
 
 // Prefix
-console.log(++a);   // a is incremented first and then new value of a is printed
+console.log(++a);   // 'a' is incremented first, then the new value of 'a' is printed
         // Above statement prints 3
 ```
