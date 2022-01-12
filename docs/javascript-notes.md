@@ -65,6 +65,48 @@ console.log(myVariable);     // Prints the (declared above) number 12 to the con
 console.log(5 + 6);          // Prints the number 11
 ```
 
+## Data Types
+There are eight data types in js.
+- #### number
+  > Number represents both integers and decimals. One can do all arithemetic operations that are normally used in maths.
+  ```js
+  let integer = 2;
+  let decimal = 2.0;
+  ```
+- #### string
+  > String represents sequence of characters enclosed in "" or ''. There is no char type normally used in other programming languages.
+  ```js
+  let name = "John Doe";
+  let country = 'India';
+  ```
+- #### Boolean
+  > Boolean represents only 2 values. `true` and `false` which are not enclosed in quotes as string. "true" and "false" are not boolean.
+  ```js
+  const adult = true;
+  ```
+- #### null
+  > `null` represents nothing. Normally used to specify explicitly that variable currently doesn't have any value.
+- #### undefined
+  > `undefined` is automatically assigned to a variable when it is declared but not assigned any value.
+- #### bigint
+- #### object
+- #### symbol
+> Use `typeof` to know the type of variable or literal.
+  ```js
+  let a;                     // declared but not initialized with any value
+  console.log(typeof a);     // undefined
+  a = null;                  
+  console.log(typeof a);     // object    This is error with js but null is separate data type
+  a = 1;
+  console.log(typeof a);     // number
+  a = 1.11;
+  console.log(typeof a);     // number
+  a = false;
+  console.log(typeof a);     // boolean
+  a = "hello";
+  console.log(typeof a);     // string
+  ```
+
 ## Mathematical operations
 
 ```js
