@@ -272,17 +272,40 @@ myStr = "Job";
 
 [Arrays on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
-```js
-// An array can hold multiple values
-const sandwich = ["peanut butter", "jelly", "bread", 2];
+Arrays can be thought of as lists in JavaScript.
+An array can hold multiple values, even if they are not the same data type (string, integer, boolean, etc.) within that array.
 
-// You can nest arrays inside other arrays
+```js
+const sandwich = ["peanut butter", "jelly", "bread", 2, false];
+```
+
+### Multi-dimensional Arrays
+
+Arrays can be nested within other arrays. This is called a multi-dimensional array.
+
+```js
 const teams = [["Bulls", 23], ["White Sox", 45]];
 ```
 
-TODO: Multi-dimensional arrays
+### Access Array data
 
-### Modify array data
+Much like getting the value of a single character in a string, accessing the full values within an array use square brackets and an index number.
+
+```js
+const months = ["January", "February", "March"];
+console.log(months[0]);  // Zero-indexing applies here as well. This will print "January" in the console.
+```
+
+We can access values in a multi-dimensional array as well:
+
+```js
+const daysInMonth = [["January", 31], ["February", 28], ["March", 31]];
+console.log(daysInMonth[2][0]); // This will print "March" in the console.
+console.log(daysInMonth[1][1]); // This will print 28 in the console.
+```
+
+
+### Modify Array data
 
 ```js
 let myArray = [2, 3, 4];
