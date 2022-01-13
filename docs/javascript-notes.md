@@ -71,51 +71,6 @@ console.log(myVariable); // Prints the (declared above) number 12 to the console
 console.log(5 + 6); // Prints the number 11
 ```
 
-## Data Types
-
- - `number` - represents both integers and decimals
-
-  ```js
-  let integer = 2;
-  let decimal = 2.0;
-  ```
-
- - `string` - represents a sequence of characters enclosed in `""` or `''`
-
-  ```js
-  let name = "John Doe";
-  let country = 'United States';
-  ```
-
- - `boolean` - represents only 2 values, `true` and `false`, which are not enclosed in quotes (`"true"` and `"false"` are strings)
-
-  ```js
-  const adult = true;
-  ```
-
- - `null` - represents nothing; normally used to specify explicitly that a variable currently doesn't have any value
-  
- - `undefined` - is automatically assigned to a variable when it is declared but not assigned any value
-
-Use `typeof` to know the type of variable or literal.
-
-  ```js
-  let a;                     // declared but not initialized with any value
-  console.log(typeof a);     // undefined
-  
-  a = 1;
-  console.log(typeof a);     // number
-  
-  a = 1.11;
-  console.log(typeof a);     // number
-  
-  a = false;
-  console.log(typeof a);     // boolean
-  
-  a = "hello";
-  console.log(typeof a);     // string
-  ```
-
 ## Mathematical Operations
 
 [Arithmetic operators on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#arithmetic_operators)
@@ -352,3 +307,48 @@ console.log(myArray); // Will print the new array in console  [ 3, 4 ]
 myArray.unshift(2);
 console.log(myArray); // Will print the new array in console  [ 2, 3, 4 ]
 ```
+
+## Data Types
+
+- `number` - represents both integers and decimals
+
+  ```js
+  let integer = 2;
+  let decimal = 2.0;
+  ```
+
+- `string` - represents a sequence of characters enclosed in `""` or `''`
+
+  ```js
+  let name = "John Doe";
+  let country = 'United States';
+  ```
+
+- `boolean` - represents only 2 values, `true` and `false`, which are not enclosed in quotes (`"true"` and `"false"` are strings)
+
+  ```js
+  const adult = true;
+  ```
+
+- `null` - represents nothing; normally used to specify explicitly that a variable currently doesn't have any value
+  
+- `undefined` - is automatically assigned to a variable when it is declared but not assigned any value
+
+Use `typeof` to know the type of variable or literal.
+
+  ```js
+  let a;                     // declared but not initialized with any value
+  console.log(typeof a);     // undefined
+  
+  a = 1;
+  console.log(typeof a);     // number
+  
+  a = 1.11;
+  console.log(typeof a);     // number
+  
+  a = false;
+  console.log(typeof a);     // boolean
+  
+  a = "hello";
+  console.log(typeof a);     // string
+  ```
