@@ -272,8 +272,7 @@ myStr = "Job";
 
 [Arrays on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
-Arrays can be thought of as lists in JavaScript.
-An array can hold multiple values, even if they are not the same data type (string, integer, boolean, etc.) within that array.
+Arrays can be thought of as lists in JavaScript; an array can hold multiple values, even if they are not the same data type (string, integer, boolean, etc.) within that array.
 
 ```js
 const sandwich = ["peanut butter", "jelly", "bread", 2, false];
@@ -281,18 +280,17 @@ const sandwich = ["peanut butter", "jelly", "bread", 2, false];
 
 ### Multi-dimensional Arrays
 
-Arrays can be nested within other arrays. This is called a multi-dimensional array.
-
 ```js
+// Arrays can be nested within other arrays
 const teams = [
   ["Bulls", 23],
   ["White Sox", 45],
 ];
 ```
 
-### Access Array data
+### Access Array Data
 
-Much like getting the value of a single character in a string, accessing the full values within an array use square brackets and an index number.
+Much like getting the value of a single character in a string, accessing the full values within an array use square brackets and an index number
 
 ```js
 const months = ["January", "February", "March"];
