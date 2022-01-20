@@ -327,6 +327,58 @@ console.log(myArray); // Will print the new array in console  [ 3, 4 ]
 myArray.unshift(2);
 console.log(myArray); // Will print the new array in console  [ 2, 3, 4 ]
 ```
+### Modify Array Data - ES6
+
+#### ES6: - Rest parameter in function parameters
+
+  
+With the Rest parameter it does not matter how many arguments are given in an array, the function will accept it. Arguments are "condensed" into one element.
+
+```js
+function addToArr(...args) {
+
+  return args.filter(arg=>arg>=4);  // filter out all elements greater than or equal to 4
+}
+
+
+console.log(addToArr(1,2,3,4,5))  // the result will be [4,5]
+
+```
+  
+  
+#### ES6: Spread operator
+
+Expands an array into its individual elements. [Spread syntax (...) on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+
+```js
+
+const mySpreadArray = [54,2,30,41,5];
+
+console.log(Math.min(...mySpreadArray))         // this example gives back the min of the array, without the ... it would result in NaN.
+
+```
+
+#### ES6: Destructuring arrays
+
+Exctract data from an array and assign it to variables.
+
+```js
+
+const myArr = [1,2,3,4,5,6,7,8,9];
+
+// assign the first four elements of the array to the variables a b c and d.
+
+let [a,b,c,d] = myArr;
+
+console.log(a,b,c,d) // result is 1, 2, 3, 4.
+
+// asign the fifth element to the variable e
+
+let [,,,,e] = myArr;    // use commas until desired index.
+
+console.log(e); // result is number 5.
+
+```
 
 ## Data Types
 
