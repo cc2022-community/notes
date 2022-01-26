@@ -372,3 +372,46 @@ Use `typeof` to know the type of variable or literal.
   a = "hello";
   console.log(typeof a);     // string
   ```
+
+## Regular Expressions
+
+[Regex on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+
+```js
+let testStr = "JavaScript";
+let testRegex = /Script/;
+testRegex.test(testStr); // returns true
+
+// Other forms of "Script" will not match
+testRegex = /script/;
+testRegex.test(testStr); // returns false
+```
+
+```js
+// Multiple possibilities using OR | operator
+let testStr = "Today we are learning JavaScript.";
+let testRegex = /HTML|CSS|JavaScript|Ruby/;
+testRegex.test(testStr); // returns true
+```
+
+### Regex Flags
+
+[Advanced searching with flags on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#advanced_searching_with_flags)
+
+```js
+let testStr = "Repeat, Repeat, Repeat";
+let ourRegex = /Repeat/;
+testStr.match(ourRegex);
+// returns ["Repeat"]
+
+let repeatRegex = /Repeat/g;
+testStr.match(repeatRegex);
+// returns ["Repeat", "Repeat", "Repeat"]
+```
+
+```js
+let testStr = "JavaScript, javascript, javaScript, JAVASCRIPT, jAVasCrIPt, JAvAScrIpT";
+let ourRegex = /JavaScript/gi;
+testStr.match(ourRegex);
+// returns all the occurences of the word "javascript" in the string regardless of their cases
+```
