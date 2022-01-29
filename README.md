@@ -10,15 +10,15 @@ Therefore they are not liable for anything that happens neither in this reposito
 
 [JavaScript 2022 Bootcamp](docs/javascript-notes.md#freecodecamp-javascript-course-notes)
 
+[Web Development 2022 Bootcamp](docs/web-notes.md#freecodecamp-web-development-bootcamp-course-notes)
+
 ## Help wanted!
 
 We currently don't have a document for the *Responsive Web Design Certification*. We would appreciate it if you could make one and add notes from your course so far. Make sure to name it `webdev-notes.md` and put it into the `docs` folder. Also follow our [contributing guidelines](CONTRIBUTING.md).
 
 ## Important links
 
-* [Code of Conduct](CODE_OF_CONDUCT.md)
-* [Contributing](CONTRIBUTING.md)
-* [Discord of this GitHub group (unaffiliated)](https://discord.gg/8TDpyca2)
+* [Code of Conduct](CODE_OF_CONDUCT.md) | [Contributing](CONTRIBUTING.md)
 * [Official Cohorts Discord](https://discord.gg/Fg9NfUpA)
 * [freeCodeCamp](https://www.freecodecamp.org/)
   * [WebDev course](https://www.freecodecamp.org/learn/responsive-web-design/)
