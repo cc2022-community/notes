@@ -327,58 +327,6 @@ console.log(myArray); // Will print the new array in console  [ 3, 4 ]
 myArray.unshift(2);
 console.log(myArray); // Will print the new array in console  [ 2, 3, 4 ]
 ```
-### Modify Array Data - ES6
-
-#### ES6: - Rest parameter in function parameters
-
-  
-With the Rest parameter it does not matter how many arguments are given in an array, the function will accept it. Arguments are "condensed" into one element.
-
-```js
-function addToArr(...args) {
-
-  return args.filter(arg=>arg>=4);  // filter out all elements greater than or equal to 4
-}
-
-
-console.log(addToArr(1,2,3,4,5))  // the result will be [4,5]
-
-```
-  
-  
-#### ES6: Spread operator
-
-Expands an array into its individual elements. [Spread syntax (...) on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
-
-```js
-
-const mySpreadArray = [54,2,30,41,5];
-
-console.log(Math.min(...mySpreadArray))         // this example gives back the min of the array, without the ... it would result in NaN.
-
-```
-
-#### ES6: Destructuring arrays
-
-Exctract data from an array and assign it to variables.
-
-```js
-
-const myArr = [1,2,3,4,5,6,7,8,9];
-
-// assign the first four elements of the array to the variables a b c and d.
-
-let [a,b,c,d] = myArr;
-
-console.log(a,b,c,d) // result is 1, 2, 3, 4.
-
-// asign the fifth element to the variable e
-
-let [,,,,e] = myArr;    // use commas until desired index.
-
-console.log(e); // result is number 5.
-
-```
 
 ## Data Types
 
@@ -424,6 +372,208 @@ Use `typeof` to know the type of variable or literal.
   a = "hello";
   console.log(typeof a);     // string
   ```
+
+## ES6
+
+### Modify Array Data (ES6)
+
+#### Rest parameter in function parameters
+
+With the rest parameter, it does not matter how many arguments are given in an array, the function will accept it; arguments are "condensed" into one element
+
+```js
+function addToArr(...args) {
+
+  return args.filter(arg=>arg>=4);  // filter out all elements greater than or equal to 4
+}
+
+
+console.log(addToArr(1,2,3,4,5))  // the result will be [4,5]
+
+```
+  
+#### Spread operator
+
+[Spread syntax on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+
+Expands an array into its individual elements.
+
+```js
+
+const mySpreadArray = [54,2,30,41,5];
+
+console.log(Math.min(...mySpreadArray))         // this example gives back the min of the array, without the ... it would result in NaN.
+
+```
+
+#### Destructuring arrays
+
+Exctract data from an array and assign it to variables.
+
+```js
+
+const myArr = [1,2,3,4,5,6,7,8,9];
+
+// assign the first four elements of the array to the variables a b c and d.
+
+let [a,b,c,d] = myArr;
+
+console.log(a,b,c,d) // result is 1, 2, 3, 4.
+
+// asign the fifth element to the variable e
+
+let [,,,,e] = myArr;    // use commas until desired index.
+
+console.log(e); // result is number 5.
+
+```
+
+### Scopes
+
+```js
+function checkScope() {
+  let i = 'function scope';
+  if (true) {
+    let i = 'block scope';
+    console.log('Block scope i is:', i);
+  }
+  console.log('Function scope i is:', i);
+  return i;
+}
+
+checkScope();
+
+/*
+Block scope i is: block scope
+Function scope i is: function scope
+*/
+```
+
+### Prevent object mutation
+
+`const` is not enough to protect data from mutation; you can freeze an object to reject any attempts at changing the object
+
+```js
+Object.freeze(obj);
+```
+
+### Default parameters for functions
+
+```js
+const increment = (number, value = 1) => number + value;
+
+console.log(increment(5, 2)); // 7
+console.log(increment(5)); // 6
+```
+
+### Arrow functions
+
+```js
+const myFunc = function() {
+  const myVar = "value";
+  return myVar;
+}
+```
+
+We can use the *arrow function syntax* instead of having to write anonymous functions this way:
+
+```js
+const myFunc = () => {
+  const myVar = "value";
+  return myVar;
+}
+```
+
+When there is no function body, and only a return value, arrow function syntax allows you to omit the keyword `return` (as well as the brackets):
+
+```js
+const myFunc = () => "value";
+```
+
+### Template literals
+
+```js
+const myDog = {
+    name: "Gustavo",
+    legs: 4,
+    tails: 1
+};
+
+console.log(`My dog is called ${myDog.name}, and he has ${myDog.legs} legs and ${myDog.tails} tail`)
+```
+
+### Classes
+
+```js
+class SpaceShuttle {
+  constructor(targetPlanet) {
+    this.targetPlanet = targetPlanet;
+  }
+}
+const zeus = new SpaceShuttle('Jupiter');
+```
+
+### Modules
+
+```html
+<script type="module" src="index.js"></script>
+```
+
+A script that uses this `module` type can now use the `import` and `export` features
+
+#### Export
+
+```js
+export const add = (x, y) => {
+  return x + y;
+}d
+```
+
+```js
+const add = (x, y) => {
+  return x + y;
+}
+
+export { add };
+```
+
+##### Export fallback
+
+Usually, you will use this syntax if only one value is being exported from a file, or to create a fallback value for a file or module
+
+```js
+export default function add(x, y) {
+  return x + y;
+}
+```
+
+```js
+export default function(x, y) {
+  return x + y;
+}
+```
+
+| Note                                                         |
+| ------------------------------------------------------------ |
+| You cannot use `export default` with `var`, `let` or `const` |
+
+#### Import
+
+```js
+import { add, subtract } from './math_functions.js';
+```
+
+Import everything from a file into an object:
+
+```js
+import * as myMathModule from "./math_functions.js";
+```
+
+##### Import a default export
+
+```js
+import add from "./math_functions.js";
+```
 
 ## Regular Expressions
 
