@@ -1,0 +1,20 @@
+name: Markdown Lint
+
+on:
+  push:
+    branches: 
+      - main
+    paths:
+      - '**.md'
+  pull_request:
+    branches: 
+      - main
+    paths:
+      - '**.md'
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: markdownlint-cli
+        uses: nosborn/github-action-markdown-cli@v3.0.1
