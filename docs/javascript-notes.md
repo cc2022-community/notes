@@ -36,6 +36,7 @@ let myVariable; // Declare a variable
 // Use what's called a "camelCase" to name your variables
 myVariable = "Hello World"; // Assign a value to a variable
 myVariable = 12; // You can assign numbers without quotation marks
+let decimalValue = 3.59; // You can assign a decimal value to your variable as well
 ```
 
 ```js
@@ -53,8 +54,6 @@ you can easily tell them apart from variables */
 
 ```js
 myName = myVariable; // You can assign the value of one variable to another
-
-let decimalValue = 3.59; // You can assign a decimal value to your variable as well
 ```
 
 ## Console Logging
@@ -140,12 +139,12 @@ myVar /= 4; // Value is 2
 
 ```js
 // You can escape literal quotes inside your string using a backslash
-let myVar = 'This is a "JavaScript" course.';
+let myVar = "This is a \"JavaScript\" course.";
 console.log(myVar); // This is a "JavaScript" course.
 
 // You can also use single quotes
 let doubleQuoteStr = "This is a string";
-let singleQuoteStr = "This is also a string";
+let singleQuoteStr = 'This is also a string';
 
 myVar = 'Adam said, "Hi, Barbara!"';
 console.log(myVar); // Adam said, "Hi, Barbara!"
@@ -475,7 +474,7 @@ const myFunc = function() {
 }
 ```
 
-We can use the *arrow function syntax* instead of having to write anonymous functions this way:
+We can use the _arrow function syntax_ instead of having to write anonymous functions this way:
 
 ```js
 const myFunc = () => {
