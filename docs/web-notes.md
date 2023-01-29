@@ -29,18 +29,25 @@ When working with HTML elements, there is types that require open and closing ta
 | `<br />`     | Line Break      |
 | `<img />`    | Image           |
 
-### Starting structure of a HTML page
+### Starting structure of a HTML page (called a boiler plate)
 
 ```HTML
-<!DOCTYPE lang=en>
-  <html>
+<!DOCTYPE html>
+  <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <script src="index.js"></script>
   </body>
   </html>
 ```
+
+[Explanation of HTML5 boiler plate elements](https://www.freecodecamp.org/news/basic-html5-template-boilerplate-code-example/)
 
 ### Adding a comment in HTML
 
